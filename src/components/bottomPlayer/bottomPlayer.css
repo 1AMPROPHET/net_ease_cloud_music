@@ -1,0 +1,669 @@
+.g-btmbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  z-index: 1002;
+}
+.m-playbar {
+  position: absolute;
+  top: -53px;
+  left: 0;
+  width: 100%;
+  height: 53px;
+  margin: 0 auto;
+}
+.m-playbar .updn {
+  position: relative;
+  z-index: 11;
+}
+.m-playbar .updn .left, .m-playbar .updn .right, .m-playbar .updn .btn, .m-playbar .bg, .m-playbar .btns a,
+.m-playbar .head .mask, .m-playbar .icn, .m-playbar .ctrl, .m-playbar .tip, .m-vol .curr, .m-playbar .words .mv,
+.m-vol .barbg, .m-playbar .words .src {
+  background: url('../../assets/img/playerbar/playbar.png') no-repeat 0 9999px;
+}
+.m-playbar .updn .left {
+  position: absolute;
+  top: -14px;
+  right: 15px;
+  width: 52px;
+  height: 67px;
+  background-position: 0 -380px;
+}
+.m-playbar-unlock .updn .btn {
+  background-position: -80px -380px;
+}
+.m-playbar-unlock .updn .btn:hover {
+  background-position: -80px -400px;
+}
+.m-playbar-lock .updn .btn {
+  background-position: -100px -380px;
+}
+.m-playbar-lock .updn .btn:hover {
+  background-position: -100px -400px;
+}
+.m-playbar .updn .btn {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 6px 0 0 17px;
+}
+.m-playbar .updn .right {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 15px;
+  height: 54px;
+  background-position: -52px -393px;
+}
+.m-playbar .bg {
+  height: 53px;
+  margin-right: 67px;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+.m-playbar .hand {
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.m-playbar .wrap {
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  z-index: 15;
+  width: 980px;
+  height: 47px;
+  margin: 0 auto;
+  margin-left: -490px;
+}
+.m-playbar .btns {
+  width: 137px;
+  padding: 6px 0 0 0;
+}
+.m-playbar .btns, .m-playbar .head, .m-playbar .play, .m-playbar .volum, .m-playbar .oper {
+  float:  left;
+}
+.m-playbar .btns .prv {
+  background-position: 0 -130px;
+}
+.m-playbar .btns .prv:hover {
+  background-position: -30px -130px;
+}
+.m-playbar .btns a {
+  display: block;
+  float: left;
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+.m-playbar .btns .ply {
+  width: 36px;
+  height: 36px;
+  margin-top: 0;
+  background-position: 0 -204px;
+}
+.m-playbar .btns .ply:hover {
+  background-position: -40px -204px;
+}
+.m-playbar .btns .pause {
+  background-position: 0 -165px;
+}
+.m-playbar .btns .pause:hover {
+  background-position: -40px -165px;
+}
+.m-playbar .btns .nxt {
+  background-position: -80px -130px;
+}
+.m-playbar .btns .nxt:hover {
+  background-position: -110px -130px;
+}
+.m-playbar .head {
+  position: relative;
+  margin: 6px 15px 0 0;
+}
+.m-playbar .head, .m-playbar .head img {
+  width: 34px;
+  height: 34px;
+}
+.m-playbar .head .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 34px;
+  height: 35px;
+  background-position: 0 -80px;
+}
+.m-playbar .play {
+  position: relative;
+  width: 608px;
+}
+.m-playbar .words {
+  height: 28px;
+  overflow: hidden;
+  color: #e8e8e8;
+  text-shadow: 0 1px 0 #171717;
+  line-height: 28px;
+}
+.m-pbar, .m-pbar .barbg {
+  width: 493px;
+}
+.m-pbar {
+  position: relative;
+}
+.m-pbar .barbg, .m-pbar .cur, .m-pbar .rdy, .m-pbar .left {
+  background: url('../../assets/img/playerbar/statbar.png') no-repeat 0 9999px;
+}
+.m-pbar, .m-pbar .barbg {
+  width: 493px;
+}
+.m-pbar .barbg, .m-pbar .cur, .m-pbar .rdy {
+  height: 9px;
+  background-position: right 0;
+}
+.m-pbar .rdy {
+  background-position: right -30px;
+}
+.m-pbar .btn, .m-vol .btn {
+  background: url('../../assets/img/hotrecommend/iconall.png') no-repeat;
+}
+.m-pbar .cur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1%;
+  background-position: left -66px;
+}
+.m-pbar .btn {
+  position: absolute;
+  top: -7px;
+  right: -13px;
+  width: 22px;
+  height: 24px;
+  margin-left: -11px;
+  background-position: 0 -250px;
+}
+.m-pbar .btn:hover {
+  background-position: 0 -280px;
+}
+.m-pbar .btn i {
+  visibility: hidden;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: url('../../assets/img/playerbar/loading.gif');
+}
+.m-pbar .time {
+  position: absolute;
+  top: -3px;
+  right: -84px;
+  color: #797979;
+  text-shadow: 0 1px 0 #121212;
+}
+.m-pbar .time em {
+  color: #a1a1a1;
+}
+.m-playbar .oper {
+  width: 60px;
+}
+.m-playbar .icn-add {
+  background-position: -88px -163px;
+}
+.m-playbar .icn-add:hover {
+  background-position: -88px -189px;
+}
+.m-playbar .icn-share {
+  background-position: -114px -163px;
+}
+.m-playbar .icn-share:hover {
+  background-position: -114px -189px;
+}
+.m-playbar .icn {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin: 11px 2px 0 0;
+}
+.m-playbar .ctrl {
+  position: relative;
+  z-index: 10;
+  width: 113px;
+  padding-left: 13px;
+  background-position: -147px -238px;
+  height: 36px;
+}
+.m-vol {
+  position: absolute;
+  top: -113px;
+  left: 9px;
+  clear: both;
+  width: 32px;
+  height: 113px;
+}
+.m-vol .barbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 113px;
+  background-position: 0 -503px;
+}
+.m-vol .vbg, .m-vol .curr {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  width: 4px;
+  height: 93px;
+}
+.m-vol .vbg {
+  padding: 4px 0;
+  top: 7px;
+}
+.m-vol .curr {
+  top: auto;
+  bottom: 4px;
+  left: 0;
+  background-position: -40px bottom;
+  overflow: hidden;
+}
+.m-vol .btn {
+  position: absolute;
+  top: 0;
+  left: -7px;
+  display: block;
+  width: 18px;
+  height: 20px;
+  background-position: -40px -250px;
+  cursor: pointer;
+}
+.m-vol .btn:hover {
+  background-position: -40px -280px;
+}
+.m-playbar .icn-vol {
+  background-position: -2px -248px;
+}
+.m-playbar .icn-vol:hover {
+  background-position: -31px -248px;
+}
+.m-playbar .icn-volno {
+  background-position: -104px -69px;
+}
+.m-playbar .icn-volno:hover {
+  background-position: -126px -69px;
+}
+.m-playbar .icn-loop {
+  background-position: -3px -344px;
+}
+.m-playbar .icn-loop:hover {
+  background-position: -33px -344px;
+}
+.m-playbar .add {
+  float: left;
+  width: 59px;
+  height: 36px;
+}
+.f-pr {
+  position: relative;
+}
+.m-playbar .tip {
+  position: absolute;
+  top: -51px;
+  left: -65px;
+  clear: both;
+  width: 152px;
+  height: 49px;
+  background-position: 0 -287px;
+  text-align: center;
+  color: #fff;
+  line-height: 37px;
+}
+.m-playbar .icn-list {
+  display: block;
+  float: none;
+  width: 38px;
+  padding-left: 21px;
+  background-position: -42px -68px;
+  line-height: 27px;
+  text-align: center;
+  color: #666 !important;
+  text-shadow: 0 1px 0 #080707;
+  text-decoration: none;
+}
+.m-playbar .icn-list:hover {
+  background-position: -42px -98px;
+  text-decoration: none;
+}
+.visibility {
+  visibility: visible !important;
+}
+.playbarHold {
+  top: -53px !important;
+}
+.m-playbar .list {
+  position: absolute;
+  left: 50%;
+  bottom: 47px;
+  width: 986px;
+  height: 301px;
+  margin-left: -493px;
+}
+.m-playbar .listhd, .m-playbar .listbd {
+  background: url('../../assets/img/playerbar/playlist_bg.png') no-repeat;
+}
+.m-playbar .listhd {
+  background-position: 0 0;
+  height: 41px;
+}
+.m-playbar .listhd, .m-playbar .listbd {
+  padding: 0 5px;
+}
+.m-playbar .listhdc {
+  position: relative;
+  height: 40px;
+}
+.m-playbar .listhdc h4 {
+  position: absolute;
+  left: 25px;
+  top: 0;
+  height: 39px;
+  line-height: 39px;
+  font-size: 14px;
+  color: #e2e2e2;
+}
+.m-playbar .listhdc .clear, .m-playbar .listhdc .addall {
+  position: absolute;
+  left: 490px;
+  top: 12px;
+  height: 15px;
+  line-height: 15px;
+  cursor: pointer;
+}
+.m-playbar .listhdc .addall {
+  left: 398px;
+}
+.m-playbar .listhdc a {
+  color: #ccc;
+}
+.m-playbar .listhdc a:hover {
+  color: #e2e2e2;
+}
+.m-playbar .listhdc .ico {
+  float: left;
+  margin: 1px 6px 0 0;
+}
+.m-playbar .ico {
+  height: 16px;
+}
+.m-playbar .list .close, .m-playbar .playicn, .m-playbar .ico {
+  background: url('../../assets/img/playerbar/playlist.png') no-repeat 0 9999px;
+}
+.m-playbar .ico-add {
+  width: 16px;
+  background-position: -24px 0;
+}
+.m-playbar .ico-add:hover, .m-playbar a:hover .ico-add {
+  background-position: -24px -20px;
+}
+.m-playbar .listhdc .line1 {
+  position: absolute;
+  top: 13px;
+  left: 477px;
+  height: 15px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #2c2c2c;
+}
+.m-playbar .icn-del {
+  width: 13px;
+  background-position: -51px 0;
+}
+.m-playbar .icn-del:hover, .m-playbar a:hover .icn-del {
+  background-position: -51px -20px;
+}
+.m-playbar .listhdc .lytit {
+  position: absolute;
+  left: 595px;
+  top: 0;
+  width: 346px;
+  text-align: center;
+  height: 39px;
+  line-height: 39px;
+  color: #fff;
+  font-size: 14px;
+}
+.m-playbar .listhdc .close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  background-position: -195px 9px;
+}
+.m-playbar .listhdc .close:hover {
+  background-position: -195px -21px;
+}
+.m-playbar .listbd {
+  position: absolute;
+  left: 0;
+  top: 41px;
+  width: 976px;
+  height: 260px;
+  overflow: hidden;
+  background-position: -1014px 0;
+  background-repeat: repeat-y;
+}
+.m-playbar .msk {
+  position: absolute;
+  left: 2px;
+  top: 0;
+  z-index: 2;
+  width: 558px;
+  height: 260px;
+  background: #121212;
+  opacity: .5;
+}
+.m-playbar .listbdc {
+  position: absolute;
+  left: 2px;
+  top: 0;
+  z-index: 4;
+  height: 260px;
+  width: 553px;
+  overflow: hidden;
+}
+.m-playbar .listbdc ul {
+  overflow: hidden;
+}
+.m-playbar .list ul {
+  color: #ccc;
+}
+.m-playbar .list li {
+  float: left;
+  width: 100%;
+}
+.m-playbar .list li:hover, .m-playbar .list li.z-hover1 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.m-playbar .list li.z-sel {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.m-playbar .list li:hover .col, .m-playbar .list li:hover .col a, .m-playbar .list li:hover .col a:hover,
+.m-playbar .list li.z-sel .col, .m-playbar .list li.z-sel .col a, .m-playbar .list li.z-sel .col a:hover {
+  color: #fff;
+}
+.m-playbar .col-1 {
+  width: 10px;
+}
+.m-playbar .playicn {
+  display: none;
+  margin-top: 8px;
+  width: 10px;
+  height: 13px;
+  background-position: -182px 0;
+}
+.m-playbar .col {
+  float: left;
+  padding-left: 10px;
+  height: 28px;
+  line-height: 28px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.m-playbar .col-2 {
+  width: 256px;
+}
+.m-playbar .col-2, .m-playbar .col-4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-playbar .col-3 {
+  width: 78px;
+  position: relative;
+}
+.m-playbar .col .icns {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 23px;
+}
+.m-playbar .list li.z-sel .playicn, .m-playbar .list li:hover .icns, .m-playbar .list li.z-hover1 .icns {
+  display: block;
+}
+.m-playbar .col .ico {
+  float: right;
+  overflow: hidden;
+  margin: 7px 0 0 10px;
+}
+.m-playbar .ico {
+  height: 16px;
+}
+.m-playbar .ico-dl {
+  width: 14px;
+  background-position: -57px -50px;
+}
+.m-playbar .ico-share {
+  width: 14px;
+  background-position: 0 0;
+}
+.m-playbar .ico-dl:hover, .m-playbar a:hover .ico-dl {
+  background-position: -80px -50px;
+}
+.m-playbar .ico-share:hover, .m-playbar a:hover .ico-share {
+  background-position: 0 -20px;
+}
+.m-playbar .col-4 {
+  width: 70px;
+}
+.m-playbar .col a, .m-playbar .col a:hover {
+  color: #9b9b9b;
+}
+.m-playbar .col-5 {
+  width: 35px;
+  color: #666;
+}
+.m-playbar .col-6 {
+  width: 37px;
+  padding-left: 6px;
+}
+.m-playbar .col .ico-src {
+  width: 14px;
+  margin-left: 0;
+  background-position: -80px 0;
+}
+.m-playbar .col .ico-src:hover, .m-playbar .col a:hover .ico-src {
+  background-position: -80px -20px;
+}
+.m-playbar .listbd .bline {
+  position: absolute;
+  left: 555px;
+  top: -1px;
+  z-index: 2;
+  width: 6px;
+  height: 260px;
+  background: #000;
+  opacity: .5;
+}
+.m-playbar .listbd .scrol {
+  position: absolute;
+  left: 0;
+  width: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #868686;
+  border: 1px solid #a6a6a6;
+  opacity: .8;
+}
+.m-playbar .ask {
+  position: absolute;
+  right: 25px;
+  top: 12px;
+  cursor: pointer;
+  z-index: 5;
+}
+.m-playbar .ico-ask {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-position: 0 -50px;
+}
+.m-playbar .ico-ask:hover {
+  background-position: -24px -50px;
+}
+.m-playbar .msk2 {
+  position: absolute;
+  left: 560px;
+  top: 0;
+  z-index: 3;
+  width: 420px;
+  height: 250px;
+  background: #121212;
+  opacity: .01;
+}
+.m-playbar .listlyric {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  z-index: 4;
+  margin: 21px 0 20px 0;
+  height: 219px;
+  width: 354px;
+  overflow: hidden;
+}
+.m-playbar .listlyric p {
+  color: #989898;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 32px;
+  height: auto !important;
+  height: 32px;
+  min-height: 32px;
+  transition: color 0.7s linear;
+}
+.m-playbar .listlyric p.z-sel {
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.7s linear;
+}
+.m-playbar .listbd .bline-1 {
+  left: auto;
+  right: 2px;
+}
+.m-playbar .listbd .scrol-1 {
+  left: auto;
+  right: 0;
+}
+#lyricScroll {
+  transition: transform 300ms;
+}

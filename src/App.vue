@@ -1,30 +1,47 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="main-body">
+    <topbar/>
+    <router-view/>
+    <bottom/>
+    <bottom-player/>
+    <login-window/>
+    <Mask/>
+    <toast ref="toast"/>
   </div>
-  <router-view/>
 </template>
 
+<script>
+import Bottom from './components/bottom/Bottom.vue'
+import BottomPlayer from './components/bottomPlayer/BottomPlayer.vue'
+import LoginWindow from './components/login/LoginWindow.vue'
+import Mask from './components/login/Mask.vue'
+import Topbar from './components/topbar/topbar.vue'
+import Toast from './components/Toast/Toast.vue'
+import eventBus from './common/utils/mitt/eventBus.js'
+
+export default {
+  name: 'app',
+  components: {
+    Topbar,
+    Bottom,
+    BottomPlayer,
+    LoginWindow,
+    Mask,
+    Toast  
+  },
+  mounted() {
+    eventBus.on('alreadyAdded', () => {
+      this.$refs.toast.show('已存在于播放列表')
+    })
+    eventBus.on('noCopyright', () => {
+      this.$refs.toast.show('无音乐版权')
+    })
+  },
+  methods: {
+  },
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  
 </style>

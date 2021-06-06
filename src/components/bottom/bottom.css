@@ -1,0 +1,122 @@
+.g-ft {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  height: 172px;
+  overflow: hidden;
+  border-top: 1px solid #d3d3d3;
+  background: #f2f2f2;
+}
+.m-ft {
+  width: 980px;
+  margin: 0 auto;
+}
+.m-ft .copy {
+  float: left;
+  width: 520px;
+  padding-top: 15px;
+  line-height: 24px;
+}
+.s-fc3, a.s-fc3:hover {
+  color: #666;
+}
+.s-fc4, a.s-fc4:hover {
+  color: #999;
+}
+.m-ft .copy .line {
+  margin: 0 8px 0 10px;
+  color: #c2c2c2;
+}
+.m-ft .copy .sep {
+  margin-right: 14px;
+}
+.m-ft .copy .police-link {
+  margin-left: 5px;
+  font-size: 0;
+}
+.m-ft .copy .police-logo {
+  width: 14px;
+  height: 14px;
+  background-image: url('../../assets/img/bottom/police.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 2px;
+  vertical-align: -2px;
+}
+.m-ft .copy .police-text {
+  font-size: 12px;
+}
+.m-ft .enter {
+  width: 420px;
+  margin-top: 33px;
+}
+.f-fr {
+  float: left;
+}
+.m-ft .logonew.logo-amped {
+  background-position: -63px -456.5px;
+}
+.m-ft .logonew.logo-auth {
+  background-position: -63px -101px;
+}
+.m-ft .logonew.logo-musician {
+  background-position: 0 0;
+}
+.m-ft .logonew.logo-reward {
+  background-position: -63px -50px;
+}
+.m-ft .logonew.logo-cash {
+  background-position: 0 -101px;
+}
+.m-ft .logo.logonew {
+  background-image: url('../../assets/img/bottom/foot_enter_new.png');
+  background-repeat: no-repeat;
+  background-size: 110px 552px;
+}
+.m-ft .logonew {
+  display: block;
+  float: none;
+  width: 50px;
+  height: 45px;
+  margin: 0 auto;
+}
+.m-ft .enter .tt {
+  display: inline-block;
+  margin: 5px 5px 0;
+  width: 52px;
+  height: 14px;
+}
+.m-ft .enter .tt-amped {
+  background-position: 0 -108px;
+  margin-left: -6px;
+  width: 72px;
+}
+.m-ft .enter .tt-auth {
+  background-position: -1px -91px;
+}
+.m-ft .enter .tt-musician {
+  background-position: 0 0;
+}
+.m-ft .enter .tt-reward {
+  background-position: 0 -54px;
+}
+.m-ft .enter .tt-cash {
+  background-position: -1px -72px;
+}
+.m-ft .tt {
+  background-image: url('../../assets/img/bottom/foot_enter_tt.png');
+  background-repeat: no-repeat;
+  background-size: 180px 139px;
+}
+.m-ft .enter .unit {
+  float: left;
+  width: 60px;
+  height: 70px;
+  margin-left: 30px;
+  text-align: center;
+  color: #666;
+}
+.m-ft .enter .unit:first-child {
+  margin-left: 0;
+}

@@ -1,0 +1,143 @@
+#rec-banner {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+#banner-bg {
+  width: 100%;
+  height: 285px;
+  filter: blur(20px);
+  background-size: 6000px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 500ms ease;
+  z-index: -1;
+}
+.bg-border {
+  position: absolute;
+  height: 285px;
+  overflow: hidden;
+  width: 100%;
+}
+.wrap {
+  position: relative;
+  width: 982px;
+  margin: 0 auto;
+}
+.banner {
+  width: 982px;
+  height: 285px;
+  position: relative;
+}
+.banner-item {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 285px;
+  z-index: 10;
+  opacity: 0;
+  transition: 500ms ease;
+}
+.img {
+  width: 730px;
+  height: 285px;
+  overflow: hidden;
+}
+.active {
+  opacity: 1;
+  transition: 500ms ease;
+}
+.download {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  right: -1px;
+  height: 285px;
+  width: 254px;
+}
+.download .btn {
+  display: block;
+  width: 215px;
+  height: 56px;
+  margin: 186px 0 0 19px;
+  background-position: 0 9999px;
+  text-indent: -9999px;
+}
+.download .btn:hover {
+  background-position-y: -290px;
+}
+.download, .download .btn {
+  background-image: url('../../../assets/img/recommend/download.png');
+  background-repeat: no-repeat;
+}
+.download p {
+  text-align: center;
+  color: #8d8d8d;
+  margin: 10px auto;
+
+}
+.shadow-left {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 20px;
+  height: 285px;
+  background-position: -1px 0;
+  background-image: url('../../../assets/img/recommend/banner.png');
+  background-position: 0 9999px no-repeat;
+}
+.shadow-right {
+  left: auto;
+  right: -20px;
+  background-position: -20px 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 285px;
+  background-image: url('../../../assets/img/recommend/banner.png');
+}
+.indicator {
+  position: absolute;
+  top: 259px;
+  left: 0;
+  width: 730px;
+  height: 20px;
+  text-align: center;
+  z-index: 99;
+}
+.indicator .dots {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: 3px -343px;
+  background-image: url('../../../assets/img/recommend/banner.png');
+}
+.indicator .dots:hover, .redDots {
+  background-position: -16px -343px !important;
+}
+.leftArrow, .rightArrow {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -31px;
+  width: 37px;
+  height: 63px;
+  z-index: 9;
+  background-image: url('../../../assets/img/recommend/banner.png');
+}
+.leftArrow {
+  left: -68px;
+  background-position: 0 -360px;
+}
+.rightArrow {
+  right: -68px;
+  background-position: 0 -508px;
+}
+.leftArrow:hover {
+  background-position: 0 -430px;
+}
+.rightArrow:hover {
+  background-position: 0 -578px;
+}
