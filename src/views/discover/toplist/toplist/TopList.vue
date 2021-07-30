@@ -8,6 +8,7 @@
 
 <script>
 import {getRankDetail, getAllList} from '../../../../service/rank'
+import {getTopList} from '../../../../service/recommend'
 import {listDetail} from '../../../../service/rank'
 import {getListComment} from '../../../../service/comment.js'
 import BackTop from '../../../../components/backtop/BackTop.vue';
@@ -54,16 +55,18 @@ export default {
     // 获取当前榜单类别
     getCurrentList() {
       getAllList().then(res => {
+        console.log(res)
         // 榜单信息
         this.currentListInfo = new listDetail(res.data.list[this.$store.state.categoryIndex])
+        console.log(this.currentListInfo)
         // 榜单详情
-        getRankDetail(res.data.list[this.$store.state.categoryIndex].id).then(res => {
-          // console.log(res);
+        getTopList(res.data.list[this.$store.state.categoryIndex].id).then(res => {
+          console.log(res.data.playlist);
           this.currentList = res.data.playlist
         })
         // 获取榜单评论
         getListComment(res.data.list[this.$store.state.categoryIndex].id).then(res => {
-          console.log(res);
+          // console.log(res);
           this.$store.commit('getComment', res.data)
         })
       })
@@ -79,7 +82,7 @@ export default {
         })
         // 获取榜单评论
         getListComment(res.data.list[this.$store.state.categoryIndex].id).then(res => {
-          console.log(res);
+          // console.log(res);
           this.$store.commit('getComment', res.data)
         })
       })
